@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="web.Logic.Clases.clsVendedor, web.Logic" table="VENDEDOR">
+    <id name="CODIGO" column="CODIGO" type="Int32">
+      <generator class="assigned"/>
+    </id>
+    <property name="NOMBRE" column="NOMBRE" type="String" length="50"/>
+    <property name="APELLIDO" column="APELLIDO" type="String" length="50"/>
+    <property name="NUMERO_IDENTIFICACION" column="NUMERO_IDENTIFICACION" type="String" length="150"/>
+    <property name="CODIGO_CIUDAD" column="CODIGO_CIUDAD" type="Int32"/>
+  </class>
+
+</hibernate-mapping>
